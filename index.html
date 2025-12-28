@@ -183,7 +183,7 @@ document.onmousemove=function(e){
 
 // Discord Lanyard
 var dID=document.querySelector('.wrap').getAttribute('data-discord-id');
-if(dID && dID!=="BURAYA_DISCORD_ID_YAZILACAK"){
+if(dID && dID!=="729706417140793428"){
   var sock=new WebSocket('wss://api.lanyard.rest/socket');
   sock.onopen=()=>sock.send(JSON.stringify({op:2,d:{subscribe_to_id:dID}}));
   sock.onmessage=e=>{
@@ -287,3 +287,4 @@ document.querySelectorAll('.clip-item').forEach((clip, index) => {
 </body>
 
 </html>
+
